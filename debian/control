@@ -1,0 +1,93 @@
+Source: siduction-settings-xorg
+Section: graphics
+Priority: extra
+Maintainer: Ovidiu Angelescu <convbsd@siduction.org>
+Build-Depends: debhelper (>= 9.0.0)
+Standards-Version: 3.9.4
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.siduction.org/code/siduction-settings-xorg.git
+#Vcs-Browser: http://git.siduction.org/code/siduction-settings-xorg.git;a=summary
+
+Package: siduction-xserver
+Architecture: any
+Depends: ${misc:Depends},
+    gnupg-agent,
+    dmz-cursor-theme,
+    fontconfig,
+    fontconfig-config,
+    libgl1-mesa-dri,
+    menu,
+    mesa-utils,
+    sux,
+    ttf-dejavu-core,
+    ttf-dejavu-extra,
+    fonts-liberation,
+    xauth,
+    xfonts-base,
+    xfonts-75dpi,
+    xfonts-75dpi-transcoded,
+    xfonts-100dpi,
+    xfonts-100dpi-transcoded,
+    xserver-xorg,
+    xserver-xorg-input-all,
+    xserver-xorg-input-vmmouse,
+    xserver-xorg-video-ati,
+    xserver-xorg-video-nouveau,
+    xserver-xorg-video-vesa,
+    xserver-xorg-video-mga,
+    xserver-xorg-video-qxl,
+    xserver-xorg-video-intel,
+    xserver-xorg-video-fbdev,
+    xserver-xorg-video-vmware,
+    xinit,
+    xutils
+Description: Siduction xserver packages are added as depends
+ Xserver packages for siduction to be added over installed nox
+
+Package: siduction-debian-xutils
+Architecture: any
+Depends: ${misc:Depends},
+    acpi-support,
+    feh,
+    ffmpeg,
+    dvb-apps,
+    foomatic-db-gutenprint,
+    galternatives,
+    gvfs-bin,
+    gvfs-backends,
+    ghostscript-x,
+    hpijs-ppds,
+    hplip,
+    imagemagick,
+    libsane-extras,
+    myspell-de-de,
+    myspell-en-us,
+    myspell-pt-br,
+    ntfs-config,
+    python-notify,
+    printer-driver-gutenprint,
+    printer-driver-splix,
+    sane,
+    sane-utils,
+    scrot,
+    system-config-printer-udev,
+    xsane,
+    zenity,
+    zim
+Description: debian xutils included in siduction
+ Debian x utilities included in siduction
+
+Package: siduction-xutils
+Architecture: any
+Depends: ${misc:Depends},
+    configure-cups,
+    fonts-droid,
+    gparted,
+    install-usb-gui,
+    siduction-bug-report,
+    sidu-disk-center,
+    siguibui,
+    siduction-dynamic-dms,
+    xdg-browser-launcher
+Description: siduction xutils
+ Siduction utilities which require x

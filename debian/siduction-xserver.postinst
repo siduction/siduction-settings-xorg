@@ -1,0 +1,32 @@
+#!/bin/sh -e
+
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+
+say() {
+	echo "I: $@..."
+}
+
+do_postinst() {
+	say 'Disabling bitmap fonts'
+	ln -sf ../conf.avail/70-no-bitmaps.conf \
+		/etc/fonts/conf.d/70-no-bitmaps.conf
+	# This must be done post fontconfig-config installation
+	echo fontconfig-config fontconfig/enable_bitmaps boolean false | \
+		debconf-set-selections
+	say 'Hacking /etc/inittab for runlevel 5 login'
+	# We also set default runlevel to 5
+	sed -e 's#^id:[0-6]:initdefault:#id:5:initdefault:#' \
+	    -e 's#^\([0-6]\):23:#\1:2345:#' \
+		/usr/share/sysvinit/inittab > /etc/inittab
+}
+
+case "${1}" in
+	configure)
+		do_postinst
+		;;
+	*)
+		echo "Usage: ${0} postinst"
+		;;
+esac
+
+:
