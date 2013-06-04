@@ -1,0 +1,12 @@
+# don't track debian build foo
+debian/files
+debian/siduction-debian-xutils.debhelper.log
+debian/siduction-debian-xutils.substvars
+debian/siduction-debian-xutils/
+debian/siduction-xserver.debhelper.log
+debian/siduction-xserver.substvars
+debian/siduction-xserver/
+debian/siduction-xutils.debhelper.log
+debian/siduction-xutils.substvars
+debian/siduction-xutils/
+

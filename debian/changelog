@@ -1,5 +1,6 @@
-siduction-settings-xorg (1.0) UNRELEASED; urgency=low
+siduction-settings-xorg (1.0) unstable; urgency=low
 
+  [ Ovidiu Angelescu ]
   * Initial Release.
 
- -- Ovidiu Angelescu <convbsd@siduction.org>  Wed, 29 May 2013 08:58:46 +0300
+ -- Alf Gaida <agaida@siduction.org>  Tue, 04 Jun 2013 21:27:51 +0200
