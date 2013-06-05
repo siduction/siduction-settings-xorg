@@ -1,0 +1,12 @@
+# tell lintian not to complain empty-binary-packages
+# because those are only metapackages
+siduction-xserver: empty-binary-package
+# tell lintian to not complain about xfonts* packages depends
+siduction-xserver: package-depends-on-an-x-font-package depends: xfonts-base
+siduction-xserver: package-depends-on-an-x-font-package depends: xfonts-75dpi
+siduction-xserver: package-depends-on-an-x-font-package depends: xfonts-75dpi-transcoded
+siduction-xserver: package-depends-on-an-x-font-package depends: xfonts-100dpi
+siduction-xserver: package-depends-on-an-x-font-package depends: xfonts-100dpi-transcoded
+# tell lintian to not complain about obsolete xutils package depend
+# because xutils is still in debian
+siduction-xserver: depends-on-obsolete-package depends: xutils

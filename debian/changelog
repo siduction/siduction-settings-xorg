@@ -1,3 +1,10 @@
+siduction-settings-xorg (1.1) UNRELEASED; urgency=low
+
+  * added .gitignore
+  * fixed lintian warnings
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Wed, 05 Jun 2013 04:41:51 +0300
+
 siduction-settings-xorg (1.0) unstable; urgency=low
 
   [ Ovidiu Angelescu ]

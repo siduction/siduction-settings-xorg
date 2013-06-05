@@ -4,7 +4,7 @@ Priority: extra
 Maintainer: Ovidiu Angelescu <convbsd@siduction.org>
 Build-Depends: debhelper (>= 9.0.0)
 Standards-Version: 3.9.4
-Homepage: <insert the upstream URL, if relevant>
+Homepage: http://siduction.org
 #Vcs-Git: git://git.siduction.org/code/siduction-settings-xorg.git
 #Vcs-Browser: http://git.siduction.org/code/siduction-settings-xorg.git;a=summary
 

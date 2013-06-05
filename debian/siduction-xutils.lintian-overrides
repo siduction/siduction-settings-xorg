@@ -1,0 +1,3 @@
+# tell lintian not to complain empty-binary-packages
+# because those are only metapackages
+siduction-xutils: empty-binary-package
